@@ -17,7 +17,7 @@ import './i18n';
 import Elections from "./components/Elections";
 import ElectionManagement from "./components/Footer";
 import CandidateManagement from "./components/CandidateManagement";
-import VoteManagement from "./components/VoteManagement"; // Import Candidate Management page
+import VotesManagement from "./components/VotesManagement"; // Import Candidate Management page
 
 function App() {
     const [user, setUser] = useState(null); // Store logged-in user details
@@ -138,7 +138,7 @@ function App() {
                 <Route path="*" element={<Navigate to="/login" replace={true} />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
-                <Route path="/admin/vote-management" element={<VoteManagement />} />
+                <Route path="/admin/vote-management" element={<VotesManagement />} />
 
             </Routes>
         </Router>
