@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 import Masonry from "react-masonry-css";
 import "./ElectionManagement.css";
 
-const VoteManagement = () => {
+const VotesManagement = () => {
     const [elections, setElections] = useState([]);
     const [votes, setVotes] = useState([]);
     const [candidates, setCandidates] = useState([]);
@@ -163,4 +163,4 @@ const VoteManagement = () => {
     );
 };
 
-export default VoteManagement;
+export default VotesManagement;
